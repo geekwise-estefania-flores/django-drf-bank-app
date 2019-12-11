@@ -16,3 +16,4 @@ from drf.serializers import User_Serializers, Group_Serializers
 		"""
 		queryset = Group.objects.all()
 		serializer_class = Group_Serializer
+        
