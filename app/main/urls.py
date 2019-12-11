@@ -19,12 +19,12 @@ from rest_framework import routers
 from bank import views
 
 router = routers.DefaultRouter()
-router.register(r'users', bank_views.User_Viewset )
-router.register(r'groups', bank_views.Group_Viewset)
+router.register(r'users', views.User_Viewset )
+router.register(r'groups', views.Group_Viewset)
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path ('', include(router.urls) ),
-	path(‘api-auth/’, include(‘rest_framework,urls’))
+	path('api-auth/', include('rest_framework.urls'))
 ]
