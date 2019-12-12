@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
 from bank import views
-from models import Account, Branch, Customer, Product
+# from .models import Account, Branch, Customer, Product
 
 router = routers.DefaultRouter()
 router.register(r'users', views.User_Viewset )
