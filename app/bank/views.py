@@ -1,6 +1,7 @@
-from django.contrib.auth.models import User, Group 
+from django.contrib.auth.models import User, Group
+from .models import Account, Customer, Product
 from rest_framework import viewsets
-from bank.serializers import User_Serializers, Group_Serializers
+from bank.serializers import User_Serializers, Group_Serializers, Account_Serializers, Customer_Serializers, Product_Serializers
 
 class User_Viewset( viewsets.ModelViewSet ):
 	"""
