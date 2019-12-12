@@ -17,10 +17,12 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
 from bank import views
+from models import Account, Branch, Customer, Product
 
 router = routers.DefaultRouter()
 router.register(r'users', views.User_Viewset )
 router.register(r'groups', views.Group_Viewset)
+# router.register(r'accounts', views.)
 
 
 urlpatterns = [
