@@ -17,3 +17,24 @@ class Group_Viewset( viewsets.ModelViewSet):
 	"""
 	queryset = Group.objects.all()
 	serializer_class = Group_Serializers
+
+class Account_Viewset( viewsets.ModelViewSet ):
+    """
+		API endpoint that allows groups to be viewed or edited 
+	"""
+queryset = Account.objects.all()
+serializer_class = Account_Serializers
+
+class Customer_Viewset( viewsets.ModelViewSet):
+	"""
+		API endpoint that allows groups to be viewed or edited 
+	"""
+	queryset = Customer.objects.all()
+	serializer_class = Customer_Serializers
+
+class Product_Viewset( viewsets.ModelViewSet):
+	"""
+		API endpoint that allows groups to be viewed or edited 
+	"""
+	queryset = Product.objects.all()
+	serializer_class = Product_Serializers

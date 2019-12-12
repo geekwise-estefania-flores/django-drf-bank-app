@@ -6,15 +6,16 @@ class Account(models.Model):
 
 #branch model
 class Branch(models.Model):
+    branch_name = models.CharField(max_length = 30)
   
-  class Meta:
-    verbose_name_plural = "branches"
+    class Meta:
+        verbose_name_plural = "branches"
 
-  bank = models.ForeignKey('auth.User', related_name='bank', null=True,
-    on_delete=models.CASCADE)
+    bank = models.ForeignKey('auth.User', related_name='bank', null=True,
+        on_delete=models.CASCADE)
 
-  def __str__(self):
-    return self.bank
+    def __str__(self):
+        return self.bank
 
 
 #customer model
