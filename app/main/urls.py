@@ -22,7 +22,9 @@ from bank import views
 router = routers.DefaultRouter()
 router.register(r'users', views.User_Viewset )
 router.register(r'groups', views.Group_Viewset)
-# router.register(r'accounts', views.)
+router.register(r'accounts', views.Account_Viewset)
+router.register(r'customers', views.Customer_Viewset)
+router.register(r'products', views.Product_Viewset)
 
 
 urlpatterns = [
